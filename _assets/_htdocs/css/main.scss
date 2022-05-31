@@ -1,0 +1,8 @@
+// 共通スタイルのインポート
+@use "../../inc/css/base.scss";
+
+// 共通パーツのスタイルのインポート
+@use "../../inc/css/components/header.scss";
+@use "../../inc/css/components/footer.scss";
+// 各ページスタイルのインポート
+@use "../../inc/css/pages/front-page.scss";
