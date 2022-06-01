@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import 'normalize.css'
 import '../css/main.scss'
-import vueTest from '../../inc/js/vue/test.vue'
 import vHeader from '../../inc/js/vue/vHeader.vue'
+import vHeading2 from '../../inc/js/vue/vHeading2.vue'
 
 window.addEventListener('load', function() {
 	const hamburgerElem = $(".header-inner__hamburger");
@@ -11,6 +11,10 @@ window.addEventListener('load', function() {
 		$(".header-modal").toggleClass('on');
 	});
 
-	createApp(vueTest).mount('#app');
-	createApp(vHeader).mount('#vHeader');
+	createApp({
+		components: {
+			'v-header': vHeader,
+			'v-heading2': vHeading2
+		}
+	}).mount('#app');
 })

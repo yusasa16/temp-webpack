@@ -1,17 +1,19 @@
 <template>
 	<header class="v-header">
-		<h1 class="v-header__logo">
-			<picture>
-				<img src="/img/common/logo-header.svg" alt="My Work">
-			</picture>
-		</h1>
-		<nav class="v-header__nav">
-			<ul>
-				<li v-for="(nav, index) in navList" :key="index">
-					<a :href="nav.href">{{ nav.name }}</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="container v-header__inner">
+			<h1 class="v-header__logo">
+				<picture>
+					<img src="/img/common/logo-header.svg" alt="My Work">
+				</picture>
+			</h1>
+			<nav class="v-header__nav">
+				<ul>
+					<li v-for="(nav, index) in navList" :key="index">
+						<a :href="nav.href">{{ nav.name }}</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 </template>
 <script>
@@ -41,5 +43,39 @@ export default {
 }
 </script>
 <style lang="scss">
+.v-header {
+	padding: 121px 0;
 
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		margin: 0;
+	}
+
+	&__nav {
+		> ul {
+			display: flex;
+			justify-content: flex-end;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
+			> li {
+				margin-left: 12px;
+
+				> a {
+					display: inline-block;
+					padding: 4px 10px;
+					color: #24292E;
+					font-size: 1.44rem;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
 </style>
