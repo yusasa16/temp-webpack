@@ -1,7 +1,8 @@
 import { createApp } from 'vue'
 import 'normalize.css'
-import '../css/main.scss'
+import '../css/style.scss'
 import vHeader from '../../inc/js/vue/vHeader.vue'
+import vFooter from '../../inc/js/vue/vFooter.vue'
 import vHeading2 from '../../inc/js/vue/vHeading2.vue'
 
 window.addEventListener('load', function() {
@@ -11,10 +12,12 @@ window.addEventListener('load', function() {
 		$(".header-modal").toggleClass('on');
 	});
 
+	createApp(vHeader).mount('#header');
+	createApp(vFooter).mount('#footer');
+
 	createApp({
 		components: {
-			'v-header': vHeader,
 			'v-heading2': vHeading2
 		}
-	}).mount('#app');
+	}).mount('#main');
 })
