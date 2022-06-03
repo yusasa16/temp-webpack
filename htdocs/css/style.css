@@ -365,11 +365,28 @@ picture > img {
 
 .p-index__mv {
   height: 420px;
+  margin-bottom: 87px;
 }
 .p-index__mv img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.p-index__works {
+  margin-bottom: 137px;
+}
+.p-index__news {
+  margin-bottom: 205px;
+}
+.p-index__link {
+  text-align: center;
+  margin-top: 54px;
+}
+.p-index__link > a {
+  color: #24292e;
+}
+.p-index__link > a:hover {
+  text-decoration: none;
 }
 .v-header {
   padding: 121px 0;

@@ -1,11 +1,33 @@
 .p-index {
 	&__mv {
 		height: 420px;
+		margin-bottom: 87px;
 
 		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+		}
+	}
+
+	&__works {
+		margin-bottom: 137px;
+	}
+
+	&__news {
+		margin-bottom: 205px;
+	}
+
+	&__link {
+		text-align: center;
+		margin-top: 54px;
+
+		> a {
+			color: #24292e;
+
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 }
