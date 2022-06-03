@@ -1,4 +1,7 @@
+@charset "utf-8";
+
 // 共通スタイルのインポート
+@use "../../inc/css/variables/color.scss";
 @use "../../inc/css/base.scss";
 
 // 共通パーツのスタイルのインポート

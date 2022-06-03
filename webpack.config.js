@@ -51,6 +51,14 @@ const setting = {
 							sourceMap: true,
 						},
 					},
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: [
+                path.resolve(__dirname, '_assets/inc/css/variables/_color.scss')
+              ]
+            }
+          }
 				],
 			},
 			{

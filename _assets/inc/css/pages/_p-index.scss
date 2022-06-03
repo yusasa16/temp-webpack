@@ -1,3 +1,5 @@
+@use '../variables/_color.scss' as color;
+
 .p-index {
 	&__mv {
 		height: 420px;
@@ -23,7 +25,7 @@
 		margin-top: 54px;
 
 		> a {
-			color: #24292e;
+			color: color.$font-primary;
 
 			&:hover {
 				text-decoration: none;
