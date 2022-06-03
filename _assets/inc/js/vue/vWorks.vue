@@ -12,27 +12,27 @@ export default {
 			works: [
 				{
 					src: '/img/common/pict-works01.jpg',
-					alt: ''
+					alt: 'works01 画像'
 				},
 				{
 					src: '/img/common/pict-works02.jpg',
-					alt: ''
+					alt: 'works02 画像'
 				},
 				{
 					src: '/img/common/pict-works03.jpg',
-					alt: ''
+					alt: 'works03 画像'
 				},
 				{
 					src: '/img/common/pict-works04.jpg',
-					alt: ''
+					alt: 'works04 画像'
 				},
 				{
 					src: '/img/common/pict-works05.jpg',
-					alt: ''
+					alt: 'works05 画像'
 				},
 				{
 					src: '/img/common/pict-works06.jpg',
-					alt: ''
+					alt: 'works06 画像'
 				},
 			]
 		}
