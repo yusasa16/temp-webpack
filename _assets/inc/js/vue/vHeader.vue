@@ -43,6 +43,8 @@ export default {
 }
 </script>
 <style lang="scss">
+@use '../../css/variables/_color.scss' as color;
+
 .v-header {
 	padding: 121px 0;
 
@@ -70,7 +72,7 @@ export default {
 				> a {
 					display: inline-block;
 					padding: 4px 10px;
-					color: #24292E;
+					color: color.$font-primary;
 					font-size: 1.44rem;
 					text-decoration: none;
 				}

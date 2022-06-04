@@ -13,5 +13,6 @@ export default {
 }
 </script>
 <style lang="scss">
+@use '../../css/variables/_color.scss' as color;
 
 </style>

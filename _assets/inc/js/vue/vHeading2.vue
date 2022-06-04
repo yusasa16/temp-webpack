@@ -9,6 +9,8 @@ export default {
 }
 </script>
 <style lang="scss">
+@use '../../css/variables/_color.scss' as color;
+
 .v-heading2 {
 	text-align: center;
 	font-size: 2.4rem;

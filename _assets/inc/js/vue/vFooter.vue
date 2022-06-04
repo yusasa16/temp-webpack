@@ -9,9 +9,11 @@ export default {
 }
 </script>
 <style lang="scss">
+@use '../../css/variables/_color.scss' as color;
+
 .v-footer {
-	background: #24292e;
-	color: #fff;
+	background: color.$darkest;
+	color: color.$lightest;
 	text-align: center;
 	padding: 12px 0;
 
