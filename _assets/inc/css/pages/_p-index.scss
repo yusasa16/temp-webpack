@@ -1,4 +1,4 @@
-@use '../variables/_color.scss' as color;
+@use '../variables' as var;
 
 .p-index {
 	&__mv {
@@ -25,7 +25,7 @@
 		margin-top: 54px;
 
 		> a {
-			color: color.$font-primary;
+			color: var.$color-font-primary;
 
 			&:hover {
 				text-decoration: none;

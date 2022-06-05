@@ -59,7 +59,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@use '../../css/variables/_color.scss' as color;
+@use '../../css/variables' as var;
 
 .v-news {
 	padding: 0;
@@ -67,17 +67,17 @@ export default {
 	list-style: none;
 
 	&__item {
-		border-top: 1px solid color.$border;
+		border-top: 1px solid var.$color-border;
 
 		&:last-of-type {
-			border-bottom: 1px solid color.$border;
+			border-bottom: 1px solid var.$color-border;
 		}
 
 		> a {
 			display: flex;
 			align-items: center;
 			padding: 17px 14px;
-			color: color.$font-primary;
+			color: var.$color-font-primary;
 			text-decoration: none;
 		}
 

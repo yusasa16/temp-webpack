@@ -43,7 +43,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@use '../../css/variables/_color.scss' as color;
+@use '../../css/variables' as var;
 
 .v-header {
 	padding: 121px 0;
@@ -72,7 +72,7 @@ export default {
 				> a {
 					display: inline-block;
 					padding: 4px 10px;
-					color: color.$font-primary;
+					color: var.$color-font-primary;
 					font-size: 1.44rem;
 					text-decoration: none;
 				}
