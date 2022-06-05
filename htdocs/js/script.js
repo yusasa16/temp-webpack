@@ -17491,6 +17491,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       news: [{
+        href: '__URL__',
         date: {
           year: '2020',
           month: 'XX',
@@ -17498,6 +17499,7 @@ __webpack_require__.r(__webpack_exports__);
         },
         title: 'デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。'
       }, {
+        href: '__URL__',
         date: {
           year: '2020',
           month: 'XX',
@@ -17505,6 +17507,7 @@ __webpack_require__.r(__webpack_exports__);
         },
         title: 'ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。'
       }, {
+        href: '__URL__',
         date: {
           year: '2020',
           month: 'XX',
@@ -17512,6 +17515,7 @@ __webpack_require__.r(__webpack_exports__);
         },
         title: '【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト'
       }, {
+        href: '__URL__',
         date: {
           year: '2020',
           month: 'XX',
@@ -17519,6 +17523,7 @@ __webpack_require__.r(__webpack_exports__);
         },
         title: 'デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。'
       }, {
+        href: '__URL__',
         date: {
           year: '2020',
           month: 'XX',
@@ -17683,9 +17688,7 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "v-news"
 };
-var _hoisted_2 = {
-  href: "__URL__"
-};
+var _hoisted_2 = ["href"];
 var _hoisted_3 = ["datetime"];
 var _hoisted_4 = {
   "class": "v-news__item-title"
@@ -17695,14 +17698,18 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       key: index,
       "class": "v-news__item"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("time", {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+      href: i.href
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("time", {
       "class": "v-news__item-time",
       datetime: i.date.year + '-' + i.date.month + '-' + i.date.date
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.date.year) + "." + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.date.month) + "." + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.date.date), 9
     /* TEXT, PROPS */
     , _hoisted_3), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.title), 1
     /* TEXT */
-    )])]);
+    )], 8
+    /* PROPS */
+    , _hoisted_2)]);
   }), 128
   /* KEYED_FRAGMENT */
   ))]);
@@ -17768,10 +17775,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vFooter.vue?vue&type=style&index=0&id=b17f8164&lang=scss":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vFooter.vue?vue&type=style&index=0&id=b17f8164&lang=scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vFooter.vue?vue&type=style&index=0&id=b17f8164&lang=scss":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vFooter.vue?vue&type=style&index=0&id=b17f8164&lang=scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -17780,10 +17787,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeader.vue?vue&type=style&index=0&id=6f1ab980&lang=scss":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeader.vue?vue&type=style&index=0&id=6f1ab980&lang=scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeader.vue?vue&type=style&index=0&id=6f1ab980&lang=scss":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeader.vue?vue&type=style&index=0&id=6f1ab980&lang=scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -17792,10 +17799,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeading2.vue?vue&type=style&index=0&id=c0aec23a&lang=scss":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeading2.vue?vue&type=style&index=0&id=c0aec23a&lang=scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeading2.vue?vue&type=style&index=0&id=c0aec23a&lang=scss":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeading2.vue?vue&type=style&index=0&id=c0aec23a&lang=scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -17804,10 +17811,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vNews.vue?vue&type=style&index=0&id=8c07b974&lang=scss":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vNews.vue?vue&type=style&index=0&id=8c07b974&lang=scss ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vNews.vue?vue&type=style&index=0&id=8c07b974&lang=scss":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vNews.vue?vue&type=style&index=0&id=8c07b974&lang=scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -17816,10 +17823,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vWorks.vue?vue&type=style&index=0&id=8f7cbdc2&lang=scss":
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vWorks.vue?vue&type=style&index=0&id=8f7cbdc2&lang=scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vWorks.vue?vue&type=style&index=0&id=8f7cbdc2&lang=scss":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vWorks.vue?vue&type=style&index=0&id=8f7cbdc2&lang=scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18156,7 +18163,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_sass_resources_loader_lib_loader_js_clonedRuleSet_2_use_4_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vFooter_vue_vue_type_style_index_0_id_b17f8164_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vFooter.vue?vue&type=style&index=0&id=b17f8164&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vFooter.vue?vue&type=style&index=0&id=b17f8164&lang=scss");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vFooter_vue_vue_type_style_index_0_id_b17f8164_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vFooter.vue?vue&type=style&index=0&id=b17f8164&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vFooter.vue?vue&type=style&index=0&id=b17f8164&lang=scss");
 
 
 /***/ }),
@@ -18168,7 +18175,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_sass_resources_loader_lib_loader_js_clonedRuleSet_2_use_4_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vHeader_vue_vue_type_style_index_0_id_6f1ab980_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vHeader.vue?vue&type=style&index=0&id=6f1ab980&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeader.vue?vue&type=style&index=0&id=6f1ab980&lang=scss");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vHeader_vue_vue_type_style_index_0_id_6f1ab980_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vHeader.vue?vue&type=style&index=0&id=6f1ab980&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeader.vue?vue&type=style&index=0&id=6f1ab980&lang=scss");
 
 
 /***/ }),
@@ -18180,7 +18187,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_sass_resources_loader_lib_loader_js_clonedRuleSet_2_use_4_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vHeading2_vue_vue_type_style_index_0_id_c0aec23a_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vHeading2.vue?vue&type=style&index=0&id=c0aec23a&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeading2.vue?vue&type=style&index=0&id=c0aec23a&lang=scss");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vHeading2_vue_vue_type_style_index_0_id_c0aec23a_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vHeading2.vue?vue&type=style&index=0&id=c0aec23a&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vHeading2.vue?vue&type=style&index=0&id=c0aec23a&lang=scss");
 
 
 /***/ }),
@@ -18192,7 +18199,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_sass_resources_loader_lib_loader_js_clonedRuleSet_2_use_4_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vNews_vue_vue_type_style_index_0_id_8c07b974_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vNews.vue?vue&type=style&index=0&id=8c07b974&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vNews.vue?vue&type=style&index=0&id=8c07b974&lang=scss");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vNews_vue_vue_type_style_index_0_id_8c07b974_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vNews.vue?vue&type=style&index=0&id=8c07b974&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vNews.vue?vue&type=style&index=0&id=8c07b974&lang=scss");
 
 
 /***/ }),
@@ -18204,7 +18211,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_sass_resources_loader_lib_loader_js_clonedRuleSet_2_use_4_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vWorks_vue_vue_type_style_index_0_id_8f7cbdc2_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vWorks.vue?vue&type=style&index=0&id=8f7cbdc2&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/sass-resources-loader/lib/loader.js??clonedRuleSet-2.use[4]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vWorks.vue?vue&type=style&index=0&id=8f7cbdc2&lang=scss");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_2_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_2_use_3_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_7_use_0_vWorks_vue_vue_type_style_index_0_id_8f7cbdc2_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./vWorks.vue?vue&type=style&index=0&id=8f7cbdc2&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vWorks.vue?vue&type=style&index=0&id=8f7cbdc2&lang=scss");
 
 
 /***/ }),

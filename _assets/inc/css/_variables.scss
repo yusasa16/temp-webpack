@@ -7,3 +7,13 @@ $color-darkest: #24292e;
 $color-font-primary: $color-darkest;
 
 $color-border: #c8c8c8;
+
+
+
+/*----------------------------------------------
+	breakpoint
+----------------------------------------------*/
+$break-point: 767;
+
+$break-pc: 'min-width: #{$break-point + 1}px';
+$break-sp: 'max-width: #{$break-point}px';

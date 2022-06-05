@@ -17,5 +17,9 @@ export default {
 	font-size: 2.4rem;
 	line-height: calc(29 / 24);
 	margin-bottom: 70px;
+
+	@media (var.$break-sp) {
+		margin-bottom: 45px;
+	}
 }
 </style>

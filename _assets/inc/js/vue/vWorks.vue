@@ -50,5 +50,9 @@ export default {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 23px 24px;
+
+	@media (var.$break-sp) {
+		grid-template-columns: 1fr;
+	}
 }
 </style>

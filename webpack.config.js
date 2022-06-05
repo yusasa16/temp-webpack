@@ -40,25 +40,15 @@ const setting = {
 						loader: 'css-loader',
 						options: {
 							url: false,
-							// sourceMap: true,
 						},
 					},
 					'postcss-loader',
 					{
 						loader: "sass-loader",
 						options: {
-							// ソースマップを有効に
 							sourceMap: true,
 						},
 					},
-          {
-            loader: 'sass-resources-loader',
-            options: {
-              resources: [
-                path.resolve(__dirname, '_assets/inc/css/_variables.scss')
-              ]
-            }
-          }
 				],
 			},
 			{

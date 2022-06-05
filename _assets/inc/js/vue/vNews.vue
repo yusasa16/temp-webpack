@@ -1,7 +1,7 @@
 <template>
 	<ul class="v-news">
 		<li v-for="(i, index) in news" :key="index" class="v-news__item">
-			<a href="__URL__">
+			<a :href="i.href">
 				<time class="v-news__item-time" :datetime="i.date.year + '-' + i.date.month + '-' + i.date.date">{{ i.date.year }}.{{ i.date.month }}.{{ i.date.date }}</time>
 				<p class="v-news__item-title">{{ i.title }}</p>
 			</a>
@@ -14,6 +14,7 @@ export default {
 		return {
 			news: [
 				{
+					href: '__URL__',
 					date: {
 						year: '2020',
 						month: 'XX',
@@ -22,6 +23,7 @@ export default {
 					title: 'デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。'
 				},
 				{
+					href: '__URL__',
 					date: {
 						year: '2020',
 						month: 'XX',
@@ -30,6 +32,7 @@ export default {
 					title: 'ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。'
 				},
 				{
+					href: '__URL__',
 					date: {
 						year: '2020',
 						month: 'XX',
@@ -38,6 +41,7 @@ export default {
 					title: '【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト'
 				},
 				{
+					href: '__URL__',
 					date: {
 						year: '2020',
 						month: 'XX',
@@ -46,6 +50,7 @@ export default {
 					title: 'デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。'
 				},
 				{
+					href: '__URL__',
 					date: {
 						year: '2020',
 						month: 'XX',
@@ -80,6 +85,10 @@ export default {
 			padding: 17px 14px;
 			color: var.$color-font-primary;
 			text-decoration: none;
+
+			@media (var.$break-sp) {
+				display: block;
+			}
 		}
 
 		&-time {
