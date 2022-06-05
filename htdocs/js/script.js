@@ -17669,6 +17669,127 @@ function genPropsAccessExp(name) {
 
 /***/ }),
 
+/***/ "./_assets/inc/js/vue/index.js":
+/*!*************************************!*\
+  !*** ./_assets/inc/js/vue/index.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "vueApps": () => (/* binding */ vueApps)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _store_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./store.js */ "./_assets/inc/js/vue/store.js");
+/* harmony import */ var _vHeader_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vHeader.vue */ "./_assets/inc/js/vue/vHeader.vue");
+/* harmony import */ var _vFooter_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./vFooter.vue */ "./_assets/inc/js/vue/vFooter.vue");
+/* harmony import */ var _vHeading2_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./vHeading2.vue */ "./_assets/inc/js/vue/vHeading2.vue");
+/* harmony import */ var _vWorks_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./vWorks.vue */ "./_assets/inc/js/vue/vWorks.vue");
+/* harmony import */ var _vNews_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./vNews.vue */ "./_assets/inc/js/vue/vNews.vue");
+
+
+
+
+
+
+
+function vueApps() {
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_vHeader_vue__WEBPACK_IMPORTED_MODULE_2__["default"]).mount('#header');
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_vFooter_vue__WEBPACK_IMPORTED_MODULE_3__["default"]).mount('#footer');
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
+    components: {
+      'v-heading2': _vHeading2_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+      'v-works': _vWorks_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+      'v-news': _vNews_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
+    }
+  }).use(_store_js__WEBPACK_IMPORTED_MODULE_1__["default"]).mount('#main');
+  console.log(_store_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+}
+
+/***/ }),
+
+/***/ "./_assets/inc/js/vue/store.js":
+/*!*************************************!*\
+  !*** ./_assets/inc/js/vue/store.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
+
+var store = (0,vuex__WEBPACK_IMPORTED_MODULE_0__.createStore)({
+  state: function state() {
+    return {
+      news: [{
+        href: '__URL__',
+        date: {
+          year: '2020',
+          month: 'XX',
+          date: 'xx'
+        },
+        title: 'デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。'
+      }, {
+        href: '__URL__',
+        date: {
+          year: '2020',
+          month: 'XX',
+          date: 'xx'
+        },
+        title: 'ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。'
+      }, {
+        href: '__URL__',
+        date: {
+          year: '2020',
+          month: 'XX',
+          date: 'xx'
+        },
+        title: '【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト'
+      }, {
+        href: '__URL__',
+        date: {
+          year: '2020',
+          month: 'XX',
+          date: 'xx'
+        },
+        title: 'デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。'
+      }, {
+        href: '__URL__',
+        date: {
+          year: '2020',
+          month: 'XX',
+          date: 'xx'
+        },
+        title: '【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト'
+      }],
+      works: [{
+        src: '/img/common/pict-works01.jpg',
+        alt: 'works01 画像'
+      }, {
+        src: '/img/common/pict-works02.jpg',
+        alt: 'works02 画像'
+      }, {
+        src: '/img/common/pict-works03.jpg',
+        alt: 'works03 画像'
+      }, {
+        src: '/img/common/pict-works04.jpg',
+        alt: 'works04 画像'
+      }, {
+        src: '/img/common/pict-works05.jpg',
+        alt: 'works05 画像'
+      }, {
+        src: '/img/common/pict-works06.jpg',
+        alt: 'works06 画像'
+      }]
+    };
+  }
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (store);
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vFooter.vue?vue&type=script&lang=js":
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-1.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./_assets/inc/js/vue/vFooter.vue?vue&type=script&lang=js ***!
@@ -20214,100 +20335,14 @@ var __webpack_exports__ = {};
   !*** ./_assets/_htdocs/js/script.js ***!
   \**************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
+/* harmony import */ var _inc_js_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../inc/js/vue */ "./_assets/inc/js/vue/index.js");
 /* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! normalize.css */ "./node_modules/normalize.css/normalize.css");
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/style.scss */ "./_assets/_htdocs/css/style.scss");
-/* harmony import */ var _inc_js_vue_vHeader_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../inc/js/vue/vHeader.vue */ "./_assets/inc/js/vue/vHeader.vue");
-/* harmony import */ var _inc_js_vue_vFooter_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../inc/js/vue/vFooter.vue */ "./_assets/inc/js/vue/vFooter.vue");
-/* harmony import */ var _inc_js_vue_vHeading2_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../inc/js/vue/vHeading2.vue */ "./_assets/inc/js/vue/vHeading2.vue");
-/* harmony import */ var _inc_js_vue_vWorks_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../inc/js/vue/vWorks.vue */ "./_assets/inc/js/vue/vWorks.vue");
-/* harmony import */ var _inc_js_vue_vNews_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../inc/js/vue/vNews.vue */ "./_assets/inc/js/vue/vNews.vue");
-
-
-
-
-
-
 
 
 
 window.addEventListener('load', function () {
-  var store = (0,vuex__WEBPACK_IMPORTED_MODULE_8__.createStore)({
-    state: function state() {
-      return {
-        news: [{
-          href: '__URL__',
-          date: {
-            year: '2020',
-            month: 'XX',
-            date: 'xx'
-          },
-          title: 'デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。'
-        }, {
-          href: '__URL__',
-          date: {
-            year: '2020',
-            month: 'XX',
-            date: 'xx'
-          },
-          title: 'ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。'
-        }, {
-          href: '__URL__',
-          date: {
-            year: '2020',
-            month: 'XX',
-            date: 'xx'
-          },
-          title: '【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト'
-        }, {
-          href: '__URL__',
-          date: {
-            year: '2020',
-            month: 'XX',
-            date: 'xx'
-          },
-          title: 'デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。'
-        }, {
-          href: '__URL__',
-          date: {
-            year: '2020',
-            month: 'XX',
-            date: 'xx'
-          },
-          title: '【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト'
-        }],
-        works: [{
-          src: '/img/common/pict-works01.jpg',
-          alt: 'works01 画像'
-        }, {
-          src: '/img/common/pict-works02.jpg',
-          alt: 'works02 画像'
-        }, {
-          src: '/img/common/pict-works03.jpg',
-          alt: 'works03 画像'
-        }, {
-          src: '/img/common/pict-works04.jpg',
-          alt: 'works04 画像'
-        }, {
-          src: '/img/common/pict-works05.jpg',
-          alt: 'works05 画像'
-        }, {
-          src: '/img/common/pict-works06.jpg',
-          alt: 'works06 画像'
-        }]
-      };
-    }
-  });
-  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_inc_js_vue_vHeader_vue__WEBPACK_IMPORTED_MODULE_3__["default"]).mount('#header');
-  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_inc_js_vue_vFooter_vue__WEBPACK_IMPORTED_MODULE_4__["default"]).mount('#footer');
-  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
-    components: {
-      'v-heading2': _inc_js_vue_vHeading2_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-      'v-works': _inc_js_vue_vWorks_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
-      'v-news': _inc_js_vue_vNews_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
-    }
-  }).use(store).mount('#main');
+  (0,_inc_js_vue__WEBPACK_IMPORTED_MODULE_0__.vueApps)();
 });
 })();
 
