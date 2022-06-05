@@ -364,12 +364,6 @@ picture > img {
   vertical-align: bottom;
 }
 
-.container {
-  max-width: 960px;
-  padding: 0 60px;
-  margin: 0 auto;
-}
-
 .p-index__mv {
   height: 420px;
   margin-bottom: 87px;
@@ -380,9 +374,15 @@ picture > img {
   object-fit: cover;
 }
 .p-index__works {
+  max-width: 960px;
+  padding: 0 60px;
+  margin: 0 auto;
   margin-bottom: 137px;
 }
 .p-index__news {
+  max-width: 960px;
+  padding: 0 60px;
+  margin: 0 auto;
   margin-bottom: 205px;
 }
 .p-index__link {
@@ -409,6 +409,9 @@ picture > img {
   padding: 121px 0;
 }
 .v-header__inner {
+  max-width: 960px;
+  padding: 0 60px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

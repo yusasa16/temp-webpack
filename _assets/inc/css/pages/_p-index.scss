@@ -1,4 +1,5 @@
 @use '../variables' as var;
+@use '../mixin' as mix;
 
 .p-index {
 	&__mv {
@@ -13,10 +14,14 @@
 	}
 
 	&__works {
+		@include mix.container;
+
 		margin-bottom: 137px;
 	}
 
 	&__news {
+		@include mix.container;
+
 		margin-bottom: 205px;
 	}
 

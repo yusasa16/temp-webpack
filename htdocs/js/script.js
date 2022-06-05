@@ -17615,7 +17615,7 @@ var _hoisted_1 = {
   "class": "v-header"
 };
 var _hoisted_2 = {
-  "class": "container v-header__inner"
+  "class": "v-header__inner"
 };
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {

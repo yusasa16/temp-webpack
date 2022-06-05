@@ -1,6 +1,6 @@
 <template>
 	<header class="v-header">
-		<div class="container v-header__inner">
+		<div class="v-header__inner">
 			<h1 class="v-header__logo">
 				<picture>
 					<img src="/img/common/logo-header.svg" alt="My Work">
@@ -44,11 +44,14 @@ export default {
 </script>
 <style lang="scss">
 @use '../../css/variables' as var;
+@use '../../css/mixin' as mix;
 
 .v-header {
 	padding: 121px 0;
 
 	&__inner {
+		@include mix.container;
+
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
