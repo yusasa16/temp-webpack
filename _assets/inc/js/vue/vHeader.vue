@@ -2,9 +2,11 @@
 	<header class="v-header">
 		<div class="v-header__inner">
 			<h1 class="v-header__logo">
-				<picture>
-					<img src="/img/common/logo-header.svg" alt="My Work">
-				</picture>
+				<a href="/">
+					<picture>
+						<img src="/img/common/logo-header.svg" alt="My Work">
+					</picture>
+				</a>
 			</h1>
 			<nav class="v-header__nav">
 				<ul>
@@ -30,7 +32,7 @@ export default {
 					name: 'Works'
 				},
 				{
-					href: '__URL__',
+					href: '/news/',
 					name: 'News'
 				},
 				{

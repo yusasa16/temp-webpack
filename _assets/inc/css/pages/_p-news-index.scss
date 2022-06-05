@@ -1,0 +1,10 @@
+@use '../variables' as var;
+@use '../mixin' as mix;
+
+.p-news-index {
+	&__news {
+		@include mix.container;
+
+		margin-bottom: 137px;
+	}
+}

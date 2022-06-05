@@ -1,6 +1,6 @@
 <template>
 	<ul class="v-news">
-		<li v-for="(i, index) in news" :key="index" class="v-news__item">
+		<li v-for="(i, index) in newsCount" :key="index" class="v-news__item">
 			<a :href="i.href">
 				<time class="v-news__item-time" :datetime="i.date.year + '-' + i.date.month + '-' + i.date.date">{{ i.date.year }}.{{ i.date.month }}.{{ i.date.date }}</time>
 				<p class="v-news__item-title">{{ i.title }}</p>
@@ -10,6 +10,7 @@
 </template>
 <script>
 export default {
+	props: ['displaynum'],
 	data() {
 		return {
 			news: [
@@ -61,6 +62,15 @@ export default {
 			]
 		}
 	},
+	computed: {
+		newsCount (){
+			if (this.displaynum) {
+				return this.news.slice(0, this.displaynum);
+			} else {
+				return this.news;
+			}
+		}
+	}
 }
 </script>
 <style lang="scss">

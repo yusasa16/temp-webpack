@@ -3,11 +3,11 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Noto Sans JP', sans-serif;
 }
 
 body {
 	font-size: 1.44rem;
+	font-family: var.$font-family-primary;
 	color: var.$color-font-primary;
 }
 

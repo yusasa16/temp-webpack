@@ -17451,7 +17451,7 @@ __webpack_require__.r(__webpack_exports__);
         href: '__URL__',
         name: 'Works'
       }, {
-        href: '__URL__',
+        href: '/news/',
         name: 'News'
       }, {
         href: '__URL__',
@@ -17488,6 +17488,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ['displaynum'],
   data: function data() {
     return {
       news: [{
@@ -17532,6 +17533,15 @@ __webpack_require__.r(__webpack_exports__);
         title: '【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト'
       }]
     };
+  },
+  computed: {
+    newsCount: function newsCount() {
+      if (this.displaynum) {
+        return this.news.slice(0, this.displaynum);
+      } else {
+        return this.news;
+      }
+    }
   }
 });
 
@@ -17625,10 +17635,12 @@ var _hoisted_2 = {
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
   "class": "v-header__logo"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "/"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("picture", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   src: "/img/common/logo-header.svg",
   alt: "My Work"
-})])], -1
+})])])], -1
 /* HOISTED */
 );
 
@@ -17694,7 +17706,7 @@ var _hoisted_4 = {
   "class": "v-news__item-title"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.news, function (i, index) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.newsCount, function (i, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       key: index,
       "class": "v-news__item"
