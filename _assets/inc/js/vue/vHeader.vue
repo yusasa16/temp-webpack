@@ -24,11 +24,11 @@ export default {
 		return {
 			navList: [
 				{
-					href: '__URL__',
+					href: '/about/',
 					name: 'About'
 				},
 				{
-					href: '__URL__',
+					href: '/works/',
 					name: 'Works'
 				},
 				{
@@ -36,7 +36,7 @@ export default {
 					name: 'News'
 				},
 				{
-					href: '__URL__',
+					href: '/contact/',
 					name: 'Contact'
 				},
 			]

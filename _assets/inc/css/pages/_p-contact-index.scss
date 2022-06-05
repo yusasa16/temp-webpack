@@ -1,0 +1,8 @@
+@use '../variables' as var;
+@use '../mixin' as mix;
+
+.p-contact-index {
+	&__news {
+		@include mix.container;
+	}
+}

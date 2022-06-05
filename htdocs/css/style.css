@@ -579,6 +579,28 @@ picture > img {
   text-decoration: none;
 }
 
+.p-about-index__news {
+  max-width: 960px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .p-about-index__news {
+    padding: 0 15px;
+  }
+}
+
+.p-works-index__works {
+  max-width: 960px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .p-works-index__works {
+    padding: 0 15px;
+  }
+}
+
 .p-news-index__news {
   max-width: 960px;
   padding: 0 60px;
@@ -587,6 +609,17 @@ picture > img {
 }
 @media (max-width: 767px) {
   .p-news-index__news {
+    padding: 0 15px;
+  }
+}
+
+.p-contact-index__news {
+  max-width: 960px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .p-contact-index__news {
     padding: 0 15px;
   }
 }

@@ -17818,16 +17818,16 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       navList: [{
-        href: '__URL__',
+        href: '/about/',
         name: 'About'
       }, {
-        href: '__URL__',
+        href: '/works/',
         name: 'Works'
       }, {
         href: '/news/',
         name: 'News'
       }, {
-        href: '__URL__',
+        href: '/contact/',
         name: 'Contact'
       }]
     };

@@ -1,0 +1,8 @@
+@use '../variables' as var;
+@use '../mixin' as mix;
+
+.p-works-index {
+	&__works {
+		@include mix.container;
+	}
+}
