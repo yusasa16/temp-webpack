@@ -1,0 +1,30 @@
+{
+  "parser": {
+    "\\.vue$": "@markuplint/vue-parser",
+    "\\.pug$": "@markuplint/pug-parser"
+  },
+  "specs": {
+    "\\.vue$": "@markuplint/vue-spec"
+  },
+  "rules": {
+    "attr-duplication": true,
+    "character-reference": true,
+    "deprecated-attr": true,
+    "deprecated-element": true,
+    "disallowed-element": true,
+    "doctype": true,
+    "id-duplication": true,
+    "ineffective-attr": true,
+    "invalid-attr": true,
+    "landmark-roles": true,
+    "no-refer-to-non-existent-id": true,
+    "permitted-contents": false,
+    "required-attr": true,
+    "required-element": true,
+    "use-list": true,
+    "wai-aria": true,
+		"end-tag": true,
+		"indentation": false,
+		"no-boolean-attr-value": true
+  }
+}
