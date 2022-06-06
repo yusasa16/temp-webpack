@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import store from './store.js'
+import vBreadcrumb from './vBreadcrumb.vue'
 import vHeader from './vHeader.vue'
 import vFooter from './vFooter.vue'
 import vHeading2 from './vHeading2.vue'
@@ -12,9 +13,10 @@ export function vueApps() {
 
 	createApp({
 		components: {
+			'v-breadcrumb': vBreadcrumb,
 			'v-heading2': vHeading2,
 			'v-works': vWorks,
-			'v-news': vNews
+			'v-news': vNews,
 		}
 	}).use(store).mount('#main');
 
