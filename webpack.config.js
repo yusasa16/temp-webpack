@@ -3,6 +3,7 @@ const glob = require('glob');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const htmlList = require('./_webpack-libs/gethtml');
 const { VueLoaderPlugin } = require('vue-loader');
 const outputPath = path.resolve(__dirname, 'htdocs');
@@ -81,6 +82,15 @@ const setting = {
 	plugins: [
 		new MiniCssExtractPlugin({
 				filename: 'css/style.css',
+		}),
+
+		new CopyPlugin({
+			patterns: [
+				{
+					from: './_assets/_htdocs/img',
+					to: `${outputPath}/img`
+				}
+			]
 		}),
 
 		new BrowserSyncPlugin({

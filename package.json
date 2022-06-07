@@ -44,7 +44,6 @@
     "style-loader": "^3.3.1",
     "vue-loader": "^17.0.0",
     "vue-template-compiler": "^2.6.14",
-    "vuex": "^4.0.2",
     "webpack": "^5.33.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2",
@@ -58,6 +57,7 @@
     "normalize.css": "^8.0.1",
     "object-fit-images": "^3.2.4",
     "picturefill": "^3.0.3",
-    "vue": "^3.2.36"
+    "vue": "^3.2.36",
+    "vuex": "^4.0.2"
   }
 }
