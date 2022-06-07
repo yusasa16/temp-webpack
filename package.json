@@ -9,6 +9,7 @@
     "dev": "webpack watch --mode=development",
     "d": "yarn dev",
     "build": "webpack --mode=development",
+		"wp:build": "webpack --config webpack.wpconfig.js",
     "html:lint": "yarn markuplint \"./_assets/**/*.{html,vue}\""
   },
   "devDependencies": {
