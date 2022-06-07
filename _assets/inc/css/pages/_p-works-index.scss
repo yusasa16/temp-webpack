@@ -4,5 +4,7 @@
 .p-works-index {
 	&__works {
 		@include mix.container;
+
+		margin-bottom: 200px;
 	}
 }

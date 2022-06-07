@@ -2,7 +2,12 @@
 @use '../mixin' as mix;
 
 .p-about-index {
-	&__news {
+	&__main {
 		@include mix.container;
+		margin-bottom: 200px;
+
+		p {
+			margin: 38px 0;
+		}
 	}
 }
