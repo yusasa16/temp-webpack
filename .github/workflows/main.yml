@@ -1,4 +1,4 @@
-on: 
+on:
   push:
     branches: [ main ]
 name: 🚀 Deploy website on push
@@ -16,5 +16,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: ${{ secrets.FTP_SERVERDIR }}
+        server-dir: /www//temp-webpack
         local-dir: ./htdocs/
