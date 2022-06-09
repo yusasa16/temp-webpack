@@ -1,7 +1,7 @@
 <template>
 	<div class="v-works02">
 		<article v-for="(work, index) in works" :key="index" class="v-works02__item">
-			<img :src="work.src" :alt="work.alt">
+			<img :src="rootPath + work.src" :alt="work.alt">
 			<h2 class="v-works02__title">{{ work.title }}</h2>
 			<div v-html="work.content" class="v-works02__content"></div>
 		</article>
@@ -9,6 +9,12 @@
 </template>
 <script>
 export default {
+	props: {
+		rootPath: {
+			type: String,
+			default: ''
+		}
+	},
 	data() {
 		return {
 			works: this.$store.state.works
@@ -29,7 +35,7 @@ export default {
 	gap: 140px 0;
 
 	@media (var.$break-sp) {
-	gap: 52px 0;
+		gap: 52px 0;
 	}
 
 	&__title {

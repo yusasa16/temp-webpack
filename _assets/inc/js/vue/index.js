@@ -9,8 +9,17 @@ import vWorks02 from './vWorks02.vue'
 import vNews from './vNews.vue'
 
 export function vueApps() {
-	createApp(vHeader).mount('#header');
-	createApp(vFooter).mount('#footer');
+	createApp({
+		components: {
+			'v-header': vHeader,
+		}
+	}).mount('#header');
+
+	createApp({
+		components: {
+			'v-footer': vFooter,
+		}
+	}).mount('#footer');
 
 	createApp({
 		components: {

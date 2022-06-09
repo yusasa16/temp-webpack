@@ -10,7 +10,15 @@
 </template>
 <script>
 export default {
-	props: ['displaynum'],
+	props: {
+		displayNum: {
+			default: false
+		},
+		rootPath: {
+			type: String,
+			default: ''
+		}
+	},
 	data() {
 		return {
 			news: this.$store.state.news
@@ -18,8 +26,8 @@ export default {
 	},
 	computed: {
 		newsCount (){
-			if (this.displaynum) {
-				return this.news.slice(0, this.displaynum);
+			if (this.displayNum) {
+				return this.news.slice(0, this.displayNum);
 			} else {
 				return this.news;
 			}

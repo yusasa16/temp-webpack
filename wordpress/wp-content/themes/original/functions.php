@@ -20,11 +20,14 @@ function disable_page_wpautop() {
 }
 add_action( 'wp', 'disable_page_wpautop' );
 
+// カスタムHTMLでのショートコード有効化
+add_filter( 'widget_text', 'do_shortcode' );
+
 // 親テーマのテーマフォルダのパスを取得するショートコード
-function gettmplurl($atts, $content = null) {
+function gettmpluri($atts, $content = null) {
 return get_template_directory_uri();
 }
-add_shortcode('tmplurl', 'gettmplurl');
+add_shortcode('tmpluri', 'gettmpluri');
 
 // JS・CSSファイルを読み込む
 function add_files() {

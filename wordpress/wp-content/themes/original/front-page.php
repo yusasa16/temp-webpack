@@ -15,7 +15,7 @@
 				</div>
 				<section class="p-index__works">
 					<v-heading2>works</v-heading2>
-					<v-works></v-works>
+					<v-works root-path="<?php echo get_template_directory_uri() ?>"></v-works>
 					<p class="p-index__link">
 						<a href="__URL__">See More</a>
 					</p>

@@ -4,7 +4,7 @@
 			<h1 class="v-header__logo">
 				<a href="/">
 					<picture>
-						<img src="/img/common/logo-header.svg" alt="My Work">
+						<img :src="rootPath + '/img/common/logo-header.svg'" alt="My Work">
 					</picture>
 				</a>
 			</h1>
@@ -20,6 +20,12 @@
 </template>
 <script>
 export default {
+	props: {
+		rootPath: {
+			type: String,
+			default: ''
+		}
+	},
 	data() {
 		return {
 			navList: [

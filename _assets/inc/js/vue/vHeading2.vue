@@ -5,7 +5,12 @@
 </template>
 <script>
 export default {
-
+	props: {
+		rootPath: {
+			type: String,
+			default: ''
+		}
+	},
 }
 </script>
 <style lang="scss">

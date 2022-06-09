@@ -1,12 +1,18 @@
 <template>
 	<ul class="v-works">
 		<li v-for="(work, index) in works" :key="index" class="v-works__item">
-			<img :src="work.src" :alt="work.alt">
+			<img :src="rootPath + work.src" :alt="work.alt">
 		</li>
 	</ul>
 </template>
 <script>
 export default {
+	props: {
+		rootPath: {
+			type: String,
+			default: ''
+		}
+	},
 	data() {
 		return {
 			works: this.$store.state.works

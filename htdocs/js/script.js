@@ -17698,8 +17698,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function vueApps() {
-  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_vHeader_vue__WEBPACK_IMPORTED_MODULE_3__["default"]).mount('#header');
-  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_vFooter_vue__WEBPACK_IMPORTED_MODULE_4__["default"]).mount('#footer');
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
+    components: {
+      'v-header': _vHeader_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
+    }
+  }).mount('#header');
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
+    components: {
+      'v-footer': _vFooter_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+    }
+  }).mount('#footer');
   (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
     components: {
       'v-breadcrumb': _vBreadcrumb_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -17832,7 +17840,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    rootPath: {
+      type: String,
+      "default": ''
+    }
+  }
+});
 
 /***/ }),
 
@@ -17847,6 +17862,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    rootPath: {
+      type: String,
+      "default": ''
+    }
+  },
   data: function data() {
     return {
       navList: [{
@@ -17878,7 +17899,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    rootPath: {
+      type: String,
+      "default": ''
+    }
+  }
+});
 
 /***/ }),
 
@@ -17893,7 +17921,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['displaynum'],
+  props: {
+    displayNum: {
+      "default": false
+    },
+    rootPath: {
+      type: String,
+      "default": ''
+    }
+  },
   data: function data() {
     return {
       news: this.$store.state.news
@@ -17901,8 +17937,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     newsCount: function newsCount() {
-      if (this.displaynum) {
-        return this.news.slice(0, this.displaynum);
+      if (this.displayNum) {
+        return this.news.slice(0, this.displayNum);
       } else {
         return this.news;
       }
@@ -17923,6 +17959,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    rootPath: {
+      type: String,
+      "default": ''
+    }
+  },
   data: function data() {
     return {
       works: this.$store.state.works
@@ -17943,6 +17985,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    rootPath: {
+      type: String,
+      "default": ''
+    }
+  },
   data: function data() {
     return {
       works: this.$store.state.works
@@ -18084,31 +18132,31 @@ var _hoisted_1 = {
 var _hoisted_2 = {
   "class": "v-header__inner"
 };
-
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+var _hoisted_3 = {
   "class": "v-header__logo"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "/"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("picture", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/img/common/logo-header.svg",
-  alt: "My Work"
-})])])], -1
-/* HOISTED */
-);
-
+};
 var _hoisted_4 = {
+  href: "/"
+};
+var _hoisted_5 = ["src"];
+var _hoisted_6 = {
   "class": "v-header__nav"
 };
-var _hoisted_5 = ["href"];
+var _hoisted_7 = ["href"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.navList, function (nav, index) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("picture", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    src: $props.rootPath + '/img/common/logo-header.svg',
+    alt: "My Work"
+  }, null, 8
+  /* PROPS */
+  , _hoisted_5)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.navList, function (nav, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       key: index
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       href: nav.href
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(nav.name), 9
     /* TEXT, PROPS */
-    , _hoisted_5)]);
+    , _hoisted_7)]);
   }), 128
   /* KEYED_FRAGMENT */
   ))])])])]);
@@ -18203,7 +18251,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       key: index,
       "class": "v-works__item"
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-      src: work.src,
+      src: $props.rootPath + work.src,
       alt: work.alt
     }, null, 8
     /* PROPS */
@@ -18246,7 +18294,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       key: index,
       "class": "v-works02__item"
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-      src: work.src,
+      src: $props.rootPath + work.src,
       alt: work.alt
     }, null, 8
     /* PROPS */
