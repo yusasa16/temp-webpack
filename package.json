@@ -9,7 +9,7 @@
     "dev": "webpack watch --mode=development",
     "d": "yarn dev",
     "build": "webpack --mode=development",
-		"wp:build": "webpack --config webpack.wpconfig.js",
+    "wp:build": "webpack --config webpack.wpconfig.js",
     "html:lint": "yarn markuplint \"./_assets/**/*.{html,vue}\""
   },
   "devDependencies": {
@@ -36,6 +36,7 @@
     "imagemin-webpack-plugin": "^2.4.2",
     "markuplint": "^2.8.0",
     "mini-css-extract-plugin": "^1.5.1",
+    "postcss": "^8.4.14",
     "postcss-loader": "^5.2.0",
     "postcss-object-fit-images": "^1.1.2",
     "sass": "^1.52.1",

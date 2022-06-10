@@ -43,7 +43,16 @@ const setting = {
 							url: false,
 						},
 					},
-					'postcss-loader',
+					{
+						loader :'postcss-loader',
+						options: {
+              postcssOptions: {
+                plugins: [
+                  [ 'autoprefixer', { grid: true } ],
+                ]
+              },
+            }
+					},
 					{
 						loader: "sass-loader",
 						options: {
