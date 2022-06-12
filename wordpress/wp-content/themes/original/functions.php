@@ -37,10 +37,3 @@ function vueComponent($atts, $content = null) {
 	return '<' . $name . ' root-path="' . get_template_directory_uri() . '">' . $content . '</' . $name . '>';
 }
 add_shortcode('vue', 'vueComponent');
-
-// JS・CSSファイルを読み込む
-function add_files() {
-	// WordPress提供のjquery.jsを読み込まない
-	wp_deregister_script('jquery');
-}
-add_action('wp_enqueue_scripts', 'add_files');

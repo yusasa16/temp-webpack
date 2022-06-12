@@ -53,3 +53,7 @@ wordpress/wp-content/plugins
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+# wordpress追加分
+wordpress/wp-content/db.php
+wordpress/wp-content/upgrade

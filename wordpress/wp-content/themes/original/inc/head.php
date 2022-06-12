@@ -7,3 +7,5 @@
 <link href="<?php echo get_template_directory_uri() ?>/css/style.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script defer src="<?php echo get_template_directory_uri() ?>/js/script.js"></script>
+
+<?php wp_head(); ?>
