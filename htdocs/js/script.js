@@ -17863,6 +17863,12 @@ __webpack_require__.r(__webpack_exports__);
       type: String,
       "default": ''
     }
+  },
+  computed: {
+    copyYear: function copyYear() {
+      var now = new Date();
+      return now.getFullYear();
+    }
   }
 });
 
@@ -18142,16 +18148,13 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "v-footer"
 };
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
+var _hoisted_2 = {
   "class": "v-footer__copy"
-}, "© 2020 My Work", -1
-/* HOISTED */
-);
-
-var _hoisted_3 = [_hoisted_2];
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("footer", _hoisted_1, _hoisted_3);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("footer", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", _hoisted_2, "© " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.copyYear) + " My Work", 1
+  /* TEXT */
+  )]);
 }
 
 /***/ }),

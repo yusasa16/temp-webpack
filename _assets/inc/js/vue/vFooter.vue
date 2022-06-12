@@ -1,6 +1,6 @@
 <template>
 	<footer class="v-footer">
-		<small class="v-footer__copy">© 2020 My Work</small>
+		<small class="v-footer__copy">© {{ copyYear }} My Work</small>
 	</footer>
 </template>
 <script>
@@ -11,6 +11,12 @@ export default {
 			default: ''
 		}
 	},
+	computed: {
+		copyYear: () => {
+			const now = new Date();
+			return now.getFullYear();
+		}
+	}
 }
 </script>
 <style lang="scss">
