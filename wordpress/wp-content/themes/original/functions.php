@@ -29,6 +29,15 @@ return get_template_directory_uri();
 }
 add_shortcode('tmpluri', 'gettmpluri');
 
+// Vueコンポーネント用ショートコード
+function vueComponent($atts, $content = null) {
+	extract( shortcode_atts( array(
+		'name' => '',
+	), $atts ) );
+	return '<' . $name . ' root-path="' . get_template_directory_uri() . '">' . $content . '</' . $name . '>';
+}
+add_shortcode('vue', 'vueComponent');
+
 // JS・CSSファイルを読み込む
 function add_files() {
 	// WordPress提供のjquery.jsを読み込まない
