@@ -3,9 +3,10 @@
 // 共通スタイルのインポート
 @use "../../inc/css/base.scss";
 
-// 共通パーツのスタイルのインポート
-@use "../../inc/css/components/header.scss";
-@use "../../inc/css/components/footer.scss";
+// コンポーネントスタイルのインポート
+@use "../../inc/css/components/c-header.scss";
+@use "../../inc/css/components/c-footer.scss";
+@use "../../inc/css/components/c-news.scss";
 // 各ページスタイルのインポート
 @use "../../inc/css/pages/p-index.scss";
 @use "../../inc/css/pages/p-about-index.scss";

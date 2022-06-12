@@ -647,6 +647,37 @@ picture > img {
   vertical-align: bottom;
 }
 
+.c-news {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.c-news__item {
+  border-top: 1px solid #c8c8c8;
+}
+.c-news__item:last-of-type {
+  border-bottom: 1px solid #c8c8c8;
+}
+.c-news__item > a {
+  display: flex;
+  align-items: center;
+  padding: 17px 14px;
+  color: #24292e;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .c-news__item > a {
+    display: block;
+  }
+}
+.c-news__item-time {
+  margin-right: 76px;
+}
+.c-news__item-title {
+  flex: 1;
+  margin: 0;
+}
+
 .p-index__mv {
   height: 420px;
   margin-bottom: 87px;

@@ -1,0 +1,37 @@
+
+@use '../theme' as *;
+
+.c-news {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	&__item {
+		border-top: 1px solid $color-border;
+
+		&:last-of-type {
+			border-bottom: 1px solid $color-border;
+		}
+
+		> a {
+			display: flex;
+			align-items: center;
+			padding: 17px 14px;
+			color: $color-font-primary;
+			text-decoration: none;
+
+			@media ($break-sp) {
+				display: block;
+			}
+		}
+
+		&-time {
+			margin-right: 76px;
+		}
+
+		&-title {
+			flex: 1;
+			margin: 0;
+		}
+	}
+}
