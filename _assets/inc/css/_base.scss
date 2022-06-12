@@ -1,5 +1,4 @@
-@use 'variables' as var;
-@use 'mixin' as mix;
+@use 'theme' as *;
 
 html {
     font-size: 62.5%;
@@ -7,8 +6,8 @@ html {
 
 body {
 	font-size: 1.44rem;
-	font-family: var.$font-family-primary;
-	color: var.$color-font-primary;
+	font-family: $font-family-primary;
+	color: $color-font-primary;
 }
 
 * {

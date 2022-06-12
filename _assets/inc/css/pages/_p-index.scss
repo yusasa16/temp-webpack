@@ -1,5 +1,4 @@
-@use '../variables' as var;
-@use '../mixin' as mix;
+@use '../theme' as *;
 
 .p-index {
 	&__mv {
@@ -14,13 +13,13 @@
 	}
 
 	&__works {
-		@include mix.container;
+		@include container;
 
 		margin-bottom: 137px;
 	}
 
 	&__news {
-		@include mix.container;
+		@include container;
 
 		margin-bottom: 205px;
 	}
@@ -30,7 +29,7 @@
 		margin-top: 54px;
 
 		> a {
-			color: var.$color-font-primary;
+			color: $color-font-primary;
 
 			&:hover {
 				text-decoration: none;

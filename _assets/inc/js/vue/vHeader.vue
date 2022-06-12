@@ -51,24 +51,23 @@ export default {
 }
 </script>
 <style lang="scss">
-@use '../../css/variables' as var;
-@use '../../css/mixin' as mix;
+@use '../../css/theme' as *;
 
 .v-header {
 	padding: 121px 0;
 
-	@media (var.$break-sp) {
+	@media ($break-sp) {
 		padding: 25px 0 16px;
 	}
 
 	&__inner {
-		@include mix.container;
+		@include container;
 
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
-		@media (var.$break-sp) {
+		@media ($break-sp) {
 			display: block;
 		}
 	}
@@ -76,13 +75,13 @@ export default {
 	&__logo {
 		margin: 0;
 
-		@media (var.$break-sp) {
+		@media ($break-sp) {
 			text-align: center;
 		}
 	}
 
 	&__nav {
-		@media (var.$break-sp) {
+		@media ($break-sp) {
 			margin-top: 10px;
 		}
 
@@ -93,7 +92,7 @@ export default {
 			margin: 0;
 			list-style: none;
 
-			@media (var.$break-sp) {
+			@media ($break-sp) {
 				justify-content: center;
 			}
 
@@ -103,7 +102,7 @@ export default {
 				> a {
 					display: inline-block;
 					padding: 4px 10px;
-					color: var.$color-font-primary;
+					color: $color-font-primary;
 					font-size: 1.44rem;
 					text-decoration: none;
 				}

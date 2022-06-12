@@ -26,5 +26,6 @@ export default {
 }
 </script>
 <style lang="scss">
+@use '../../css/theme' as *;
 
 </style>

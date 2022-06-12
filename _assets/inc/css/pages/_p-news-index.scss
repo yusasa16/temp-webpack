@@ -1,9 +1,8 @@
-@use '../variables' as var;
-@use '../mixin' as mix;
+@use '../theme' as *;
 
 .p-news-index {
 	&__news {
-		@include mix.container;
+		@include container;
 
 		margin-bottom: 137px;
 	}

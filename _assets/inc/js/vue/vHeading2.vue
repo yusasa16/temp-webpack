@@ -14,8 +14,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@use '../../css/variables' as var;
-@use '../../css/mixin' as mix;
+@use '../../css/theme' as *;
 
 .v-heading2 {
 	text-align: center;
@@ -23,7 +22,7 @@ export default {
 	line-height: calc(29 / 24);
 	margin-bottom: 70px;
 
-	@media (var.$break-sp) {
+	@media ($break-sp) {
 		margin-bottom: 45px;
 	}
 }

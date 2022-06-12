@@ -36,8 +36,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@use '../../css/variables' as var;
-@use '../../css/mixin' as mix;
+@use '../../css/theme' as *;
 
 .v-news {
 	padding: 0;
@@ -45,20 +44,20 @@ export default {
 	list-style: none;
 
 	&__item {
-		border-top: 1px solid var.$color-border;
+		border-top: 1px solid $color-border;
 
 		&:last-of-type {
-			border-bottom: 1px solid var.$color-border;
+			border-bottom: 1px solid $color-border;
 		}
 
 		> a {
 			display: flex;
 			align-items: center;
 			padding: 17px 14px;
-			color: var.$color-font-primary;
+			color: $color-font-primary;
 			text-decoration: none;
 
-			@media (var.$break-sp) {
+			@media ($break-sp) {
 				display: block;
 			}
 		}

@@ -23,8 +23,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@use '../../css/variables' as var;
-@use '../../css/mixin' as mix;
+@use '../../css/theme' as *;
 
 .v-works02 {
 	padding: 0;
@@ -34,7 +33,7 @@ export default {
 	grid-template-columns: 1fr;
 	gap: 140px 0;
 
-	@media (var.$break-sp) {
+	@media ($break-sp) {
 		gap: 52px 0;
 	}
 
@@ -43,7 +42,7 @@ export default {
 		line-height: calc(17 / 14.4);
 		margin: 34px 0 0;
 
-		@media (var.$break-sp) {
+		@media ($break-sp) {
 			margin-top: 24px;
 		}
 	}

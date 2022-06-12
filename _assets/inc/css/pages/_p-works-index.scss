@@ -1,9 +1,8 @@
-@use '../variables' as var;
-@use '../mixin' as mix;
+@use '../theme' as *;
 
 .p-works-index {
 	&__works {
-		@include mix.container;
+		@include container;
 
 		margin-bottom: 200px;
 	}

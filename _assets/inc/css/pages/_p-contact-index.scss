@@ -1,9 +1,8 @@
-@use '../variables' as var;
-@use '../mixin' as mix;
+@use '../theme' as *;
 
 .p-contact-index {
 	&__contact {
-		@include mix.container;
+		@include container;
 		margin-bottom: 245px;
 	}
 }

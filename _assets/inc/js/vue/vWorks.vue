@@ -21,8 +21,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@use '../../css/variables' as var;
-@use '../../css/mixin' as mix;
+@use '../../css/theme' as *;
 
 .v-works {
 	padding: 0;
@@ -32,7 +31,7 @@ export default {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 23px 24px;
 
-	@media (var.$break-sp) {
+	@media ($break-sp) {
 		grid-template-columns: 1fr;
 	}
 }

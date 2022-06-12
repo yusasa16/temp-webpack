@@ -31,8 +31,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@use '../../css/variables' as var;
-@use '../../css/mixin' as mix;
+@use '../../css/theme' as *;
 
 .v-contact {
 	&__input {
@@ -40,13 +39,13 @@ export default {
 		grid-template-columns: 107px 1fr;
 		gap: 10px;
 
-		@media (var.$break-sp) {
+		@media ($break-sp) {
 			grid-template-columns: 1fr;
 			gap: 4px;
 		}
 
 		> div {
-			@media (var.$break-sp) {
+			@media ($break-sp) {
 				&:nth-of-type(even) {
 					margin-bottom: 10px;
 				}
@@ -57,7 +56,7 @@ export default {
 		textarea {
 			width: 100%;
 			padding: 10px 1em;
-			border: 1px solid var.$color-border;
+			border: 1px solid $color-border;
 			font-size: 1.6rem;
 			line-height: 1.25;
 		}
@@ -74,16 +73,16 @@ export default {
 			min-width: 200px;
 			margin: 0 auto;
 			padding: 16px 20px;
-			background: var.$color-darkest;
-			border: 1px solid var.$color-darkest;
+			background: $color-darkest;
+			border: 1px solid $color-darkest;
 			display: block;
-			color: var.$color-lightest;
+			color: $color-lightest;
 			cursor: pointer;
 			appearance: none;
 
 			&:hover {
-				background: var.$color-lightest;
-				color: var.$color-font-primary;
+				background: $color-lightest;
+				color: $color-font-primary;
 			}
 		}
 	}
